@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import Chatroom from "../../Assets/Projects/Chatroom.png";
-import AI_image_gen from "../../Assets/Projects/AI-Image-Generator.png";
-import Movie_Zone from "../../Assets/Projects/Movie-Xone.png";
-import RoBERTa from "../../Assets/Projects/RoBERTa-SAN.png";
-import Blog_App from "../../Assets/Projects/Blog_App.png";
-import NLTK_Sentiment from "../../Assets/Projects/NLTK-Sentiment.png";
+// import Chatroom from "../../Assets/Projects/Chatroom.png";
+// import AI_image_gen from "../../Assets/Projects/AI-Image-Generator.png";
+// import Movie_Zone from "../../Assets/Projects/Movie-Xone.png";
+// import RoBERTa from "../../Assets/Projects/RoBERTa-SAN.png";
+// import Blog_App from "../../Assets/Projects/Blog_App.png";
+// import NLTK_Sentiment from "../../Assets/Projects/NLTK-Sentiment.png";
 
 function Projects() {
   return (
@@ -23,7 +23,7 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={RoBERTa}
+              imgPath="https://i.ibb.co.com/KqMHGsF/Ro-BERTa-SAN.png"
               isBlog={false}
               title="RoBERTa-SAN For Text Classification (A Novel Transformer Hybrid Model Introduced By Me)"
               description="Implemented in Kaggle Notebook and Trained on Bangla Not Depressive, Depressive & Suicidal Classed Dataset (Collected Manually)."
@@ -35,7 +35,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={NLTK_Sentiment}
+              imgPath="https://i.ibb.co.com/CmzbDWp/NLTK-Sentiment.png"
               isBlog={false}
               title="Sentiment Detector Using NLTK Library and Django"
               description="Simple Interface in Browser with Input Form Where User Will Insert Text. NLTK Library Will Calculate Text's Sentiment and Give a Score (Positive, Negative or Neutral)."
@@ -46,7 +46,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={Movie_Zone}
+              imgPath="https://i.ibb.co.com/YNCTBVm/Movie-Xone.png"
               isBlog={false}
               title="Movie Watching Web Application “MovieXone” Using RESTApi and React"
               description="This is a Web Application. Online Movie Stream Site with React as Front End. For Back End, used Django and RESTApi"
@@ -57,7 +57,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={Chatroom}
+              imgPath="https://i.ibb.co.com/rmL7Myw/Chatroom.png"
               isBlog={false}
               title="Simple Chat Room Web Application (Using HTML, CSS, Socket.IO & JavaScript)"
               description="Group Chat Interface. Used the concept of “Socket.IO”"
@@ -68,19 +68,18 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={AI_image_gen}
+              imgPath="https://i.ibb.co.com/5xqf7QF/AI-Image-Generator.png"
               isBlog={false}
               title="AI Image Generator with Stable Diffusion"
               description="To generate AI image, used Stable Diffusion model. 
               Stable Diffusion is a latent text-to-image diffusion model capable of generating photo-realistic images given any text input."
               ghLink="https://github.com/MDSAMIULSAMI/AI-Image-Generator.git"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={Blog_App}
+              imgPath="https://i.ibb.co.com/tJk2crR/Blog-App.png"
               isBlog={false}
               title="Sam Blog App"
               description="This project is a robust, feature-packed blog platform built with Django, designed for both bloggers and readers. 
@@ -88,7 +87,6 @@ function Projects() {
               Whether you’re a seasoned Django developer or a first-time user, this documentation will guide you through the setup, functionality, and features of the app. 
               Dive in to discover how Sam Blog App can enhance your blogging experience!"
               ghLink="https://github.com/MDSAMIULSAMI/Posting_App.git"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
           </Col>
         </Row>

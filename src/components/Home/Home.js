@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/Samiul Islam.jpg";
+// import homeLogo from "https://i.ibb.co.com/2ZV3kRT/Samiul-Islam.jpg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
@@ -32,7 +32,7 @@ function Home() {
 
             <Col md={5} style={{ paddingBottom: 18 }}>
               <img
-                src={homeLogo}
+                src="https://i.ibb.co.com/2ZV3kRT/Samiul-Islam.jpg"
                 alt="home pic"
                 className="img-fluid"
                 style={{ maxHeight: "500px" }}
