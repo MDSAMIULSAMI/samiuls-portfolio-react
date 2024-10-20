@@ -1,0 +1,100 @@
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import ProjectCard from "./ProjectCards";
+import Particle from "../Particle";
+import Chatroom from "../../Assets/Projects/Chatroom.png";
+import AI_image_gen from "../../Assets/Projects/AI-Image-Generator.png";
+import Movie_Zone from "../../Assets/Projects/Movie-Xone.png";
+import RoBERTa from "../../Assets/Projects/RoBERTa-SAN.png";
+import Blog_App from "../../Assets/Projects/Blog_App.png";
+import NLTK_Sentiment from "../../Assets/Projects/NLTK-Sentiment.png";
+
+function Projects() {
+  return (
+    <Container fluid className="project-section">
+      <Particle />
+      <Container>
+        <h1 className="project-heading">
+          My <strong className="purple">Projects </strong>
+        </h1>
+        <p style={{ color: "white" }}>
+          Here are some projects I've completed.
+        </p>
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={RoBERTa}
+              isBlog={false}
+              title="RoBERTa-SAN For Text Classification (A Novel Transformer Hybrid Model Introduced By Me)"
+              description="Implemented in Kaggle Notebook and Trained on Bangla Not Depressive, Depressive & Suicidal Classed Dataset (Collected Manually)."
+              ghLink="https://github.com/MDSAMIULSAMI/RoBERTa-SAN-For-Text-Classification/blob/main/roberta-san-adam.ipynb"
+              demoLink={false} 
+            />
+                
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={NLTK_Sentiment}
+              isBlog={false}
+              title="Sentiment Detector Using NLTK Library and Django"
+              description="Simple Interface in Browser with Input Form Where User Will Insert Text. NLTK Library Will Calculate Text's Sentiment and Give a Score (Positive, Negative or Neutral)."
+              ghLink="https://github.com/MDSAMIULSAMI/Sentiment_Predictor_NLTK"
+              demoLink={false}   
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Movie_Zone}
+              isBlog={false}
+              title="Movie Watching Web Application “MovieXone” Using RESTApi and React"
+              description="This is a Web Application. Online Movie Stream Site with React as Front End. For Back End, used Django and RESTApi"
+              ghLink="https://github.com/MDSAMIULSAMI/MovieZone-Project"
+              demoLink={false}             
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Chatroom}
+              isBlog={false}
+              title="Simple Chat Room Web Application (Using HTML, CSS, Socket.IO & JavaScript)"
+              description="Group Chat Interface. Used the concept of “Socket.IO”"
+              ghLink="https://github.com/MDSAMIULSAMI/Simple-Real-Time-Chat-Room"
+              demoLink={false}
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={AI_image_gen}
+              isBlog={false}
+              title="AI Image Generator with Stable Diffusion"
+              description="To generate AI image, used Stable Diffusion model. 
+              Stable Diffusion is a latent text-to-image diffusion model capable of generating photo-realistic images given any text input."
+              ghLink="https://github.com/MDSAMIULSAMI/AI-Image-Generator.git"
+              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Blog_App}
+              isBlog={false}
+              title="Sam Blog App"
+              description="This project is a robust, feature-packed blog platform built with Django, designed for both bloggers and readers. 
+              It offers an intuitive, user-friendly interface that makes creating, managing, and engaging with blog posts seamless. 
+              Whether you’re a seasoned Django developer or a first-time user, this documentation will guide you through the setup, functionality, and features of the app. 
+              Dive in to discover how Sam Blog App can enhance your blogging experience!"
+              ghLink="https://github.com/MDSAMIULSAMI/Posting_App.git"
+              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+            />
+          </Col>
+        </Row>
+      </Container>
+    </Container>
+  );
+}
+
+export default Projects;
